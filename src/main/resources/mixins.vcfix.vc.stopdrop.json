@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "vcfix.mixin.vc",
+  "refmap": "mixins.vcfix.refmap.json",
+  "compatibilityLevel": "JAVA_8",
+  "target": "@env(DEFAULT)",
+  "minVersion": "0.8",
+  "mixins": [
+    "ContainerCarpentryBenchMixin_StopDrop"
+  ],
+  "injectors": {
+    "maxShiftBy": 10
+  }
+}
