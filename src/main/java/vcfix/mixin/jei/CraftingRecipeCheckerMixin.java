@@ -8,6 +8,7 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import vcfix.jei.VCJEIPlugin;
 
+//Copied and tweaked from RLMixins
 @Mixin(targets = "mezz.jei.plugins.vanilla.crafting.CraftingRecipeChecker$CraftingRecipeValidator")
 public abstract class CraftingRecipeCheckerMixin<T extends IRecipe> {
 

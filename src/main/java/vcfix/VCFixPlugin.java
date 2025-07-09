@@ -1,10 +1,7 @@
 package vcfix;
 
-import fermiumbooter.FermiumRegistryAPI;
-import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.relauncher.IFMLLoadingPlugin;
 import org.spongepowered.asm.launch.MixinBootstrap;
-import vcfix.config.VCFixConfigHandler;
 
 import java.util.Map;
 
@@ -13,8 +10,6 @@ public class VCFixPlugin implements IFMLLoadingPlugin {
 
 	public VCFixPlugin() {
 		MixinBootstrap.init();
-		//False for Vanilla/Coremod mixins, true for regular mod mixins
-		FermiumRegistryAPI.registerAnnotatedMixinConfig(VCFixConfigHandler.class, null);
 	}
 
 	@Override
