@@ -15,6 +15,6 @@ public abstract class ContainerCarpentryBenchMixin_FromInventory {
     )
     private boolean vcfix_vcContainerCarpentryBench_transferStackInSlot_fromInvToCrafting(ContainerCarpentryBench instance, ItemStack stack, int startIndex, int endIndex, boolean reverseDirection, Operation<Boolean> original){
         //Shift clicking on a stack in the inventory will move it into the crafting grid (instead of into the hotbar)
-        return original.call(instance, stack, 1, 16, reverseDirection);
+        return original.call(instance, stack, 1, 17, reverseDirection);
     }
 }
