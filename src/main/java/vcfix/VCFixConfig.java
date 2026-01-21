@@ -37,6 +37,11 @@ public class VCFixConfig {
 		@MixinConfig.MixinToggle(lateMixin = "mixins.vcfix.vc.stopdrop.json", defaultValue = true)
 		public boolean stopDroppingOnExit = true;
 
+		@Config.Comment("The VC Carpentry Bench uses a lazy recipe matching system which will detect some recipes that the vanilla crafting table wouldn't due to ignoring overriden recipe-inherent matching methods. This can lead to dupes and other issues. This fix forces the Carpentry Bench to use the same matching as vanilla does.")
+		@Config.Name("Bench - Fix Recipe Matching")
+		@MixinConfig.MixinToggle(lateMixin = "mixins.vcfix.vc.fixrecipematching.json", defaultValue = true)
+		public boolean fixRecipeMatching = true;
+
 		@Config.Comment("JEI sends warnings when big recipes are registered that won't fit the normal crafting table. This disables those warnings if the recipe fits into the carpentry bench.")
 		@Config.Name("JEI - Stop Log Warn Spam")
 		@MixinConfig.MixinToggle(lateMixin = "mixins.vcfix.jei.stoplogspam.json", defaultValue = true)
