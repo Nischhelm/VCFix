@@ -45,6 +45,7 @@ public class VCFixConfig {
 		@Config.Comment("JEI sends warnings when big recipes are registered that won't fit the normal crafting table. This disables those warnings if the recipe fits into the carpentry bench.")
 		@Config.Name("JEI - Stop Log Warn Spam")
 		@MixinConfig.MixinToggle(lateMixin = "mixins.vcfix.jei.stoplogspam.json", defaultValue = true)
+		@MixinConfig.CompatHandling(modid = "jei", desired = true, warnIngame = false, reason = "Optional compat with JEI")
 		public boolean stopLogSpamBigRecipes = true;
 	}
 
