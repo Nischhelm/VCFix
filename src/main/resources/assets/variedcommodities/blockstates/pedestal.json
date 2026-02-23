@@ -1,0 +1,9 @@
+{
+    "variants": {
+        "damage=0": { "model": "oak_planks" },
+        "damage=1": { "model": "stone" },
+        "damage=2": { "model": "iron_block" },
+        "damage=3": { "model": "gold_block" },
+        "damage=4": { "model": "diamond_block" }
+    }
+}

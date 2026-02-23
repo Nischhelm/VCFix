@@ -56,6 +56,16 @@ public class VCFixConfig {
 		@Config.Name("Bench - GUI Allow Number Hotkeys")
 		@MixinConfig.MixinToggle(lateMixin = "mixins.vcfix.vc.numberhotkeysingui.json", defaultValue = true)
 		public boolean allowNumberKeysBenchGUI = true;
+
+		@Config.Comment({
+				"Almost all VC blocks show glass particles when the block is broken. " +
+				"This, together with the assets in this jar, fixes it and shows somewhat related vanilla block particles instead.",
+				"Note: disabling this config will only disable the mixin, which will disable the fix for all blocks with multiple states. " +
+				"VCFix is not compatible with fully going back to only glass particles."
+		})
+		@Config.Name("Fix Glass Break Particles")
+		@MixinConfig.MixinToggle(lateMixin = "mixins.vcfix.vc.breakparticles.json", defaultValue = true)
+		public boolean fixBreakParticles = true;
 	}
 
 	@Mod.EventBusSubscriber(modid = VCFix.MODID)

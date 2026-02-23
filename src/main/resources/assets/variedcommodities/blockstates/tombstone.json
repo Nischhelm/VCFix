@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "damage=0": { "model": "stone" },
+        "damage=1": { "model": "stone" },
+        "damage=2": { "model": "stone" }
+    }
+}

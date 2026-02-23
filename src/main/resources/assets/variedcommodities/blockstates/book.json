@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "damage=0": { "model": "normal_torch" }
+    }
+}

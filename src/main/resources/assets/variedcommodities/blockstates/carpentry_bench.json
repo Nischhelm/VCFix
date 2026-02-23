@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "type=0": { "model": "oak_planks" },
+        "type=1": { "model": "anvil_undamaged" }
+    }
+}
