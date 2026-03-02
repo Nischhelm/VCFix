@@ -5,6 +5,7 @@
         "damage=2": { "model": "birch_planks" },
         "damage=3": { "model": "jungle_planks" },
         "damage=4": { "model": "acacia_planks" },
-        "damage=5": { "model": "dark_oak_planks" }
+        "damage=5": { "model": "dark_oak_planks" },
+        "damage=6": { "model": "oak_planks" }
     }
 }

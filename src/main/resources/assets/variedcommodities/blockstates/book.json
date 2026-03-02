@@ -1,5 +1,11 @@
 {
     "variants": {
-        "damage=0": { "model": "normal_torch" }
+        "damage=0": { "model": "normal_torch" },
+        "damage=1": { "model": "normal_torch" },
+        "damage=2": { "model": "normal_torch" },
+        "damage=3": { "model": "normal_torch" },
+        "damage=4": { "model": "normal_torch" },
+        "damage=5": { "model": "normal_torch" },
+        "damage=6": { "model": "normal_torch" }
     }
 }
