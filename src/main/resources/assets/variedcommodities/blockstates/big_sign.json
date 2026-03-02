@@ -1,5 +1,11 @@
 {
     "variants": {
-        "damage=0": { "model": "oak_planks" }
+        "damage=0": { "model": "oak_planks" },
+        "damage=1": { "model": "oak_planks" },
+        "damage=2": { "model": "oak_planks" },
+        "damage=3": { "model": "oak_planks" },
+        "damage=4": { "model": "oak_planks" },
+        "damage=5": { "model": "oak_planks" },
+        "damage=6": { "model": "oak_planks" }
     }
 }
