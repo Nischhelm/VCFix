@@ -42,6 +42,11 @@ public class VCFixConfig {
 		@MixinConfig.MixinToggle(lateMixin = "mixins.vcfix.vc.fixrecipematching.json", defaultValue = true)
 		public boolean fixRecipeMatching = true;
 
+		@Config.Comment("Fixes \"java.lang.ClassCastException: xx cannot be cast to noppes.vc.blocks.tiles.TileBasicContainer\" sometimes happening on worldgen.")
+		@Config.Name("Fix WorldGen crash")
+		@MixinConfig.MixinToggle(lateMixin = "mixins.vcfix.vc.stopcastcrash.json", defaultValue = true)
+		public boolean fixCastCrash = true;
+
 		@Config.Comment("JEI sends warnings when big recipes are registered that won't fit the normal crafting table. This disables those warnings if the recipe fits into the carpentry bench.")
 		@Config.Name("JEI - Stop Log Warn Spam")
 		@MixinConfig.MixinToggle(lateMixin = "mixins.vcfix.jei.stoplogspam.json", defaultValue = true)
