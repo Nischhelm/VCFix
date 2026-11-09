@@ -47,6 +47,14 @@ public class VCFixConfig {
 		@MixinConfig.MixinToggle(lateMixin = "mixins.vcfix.vc.stopcastcrash.json", defaultValue = true)
 		public boolean fixCastCrash = true;
 
+		@Config.Comment({
+				"VC containers (crates, barrels, pedestals, weapon racks) only implement the vanilla IInventory.",
+				"This additionally exposes them via the Forge IItemHandler capability, so mods that only check for the capability (pipes, storage networks, etc.) can interact with them."
+		})
+		@Config.Name("Containers - Item Handler Capability")
+		@MixinConfig.MixinToggle(lateMixin = "mixins.vcfix.vc.itemhandler.json", defaultValue = true)
+		public boolean itemHandlerCapability = true;
+
 		@Config.Comment("JEI sends warnings when big recipes are registered that won't fit the normal crafting table. This disables those warnings if the recipe fits into the carpentry bench.")
 		@Config.Name("JEI - Stop Log Warn Spam")
 		@MixinConfig.MixinToggle(lateMixin = "mixins.vcfix.jei.stoplogspam.json", defaultValue = true)
